@@ -208,6 +208,7 @@ h4 {
 
 h5 {
     font-size: 16px;
+
 }
 
 a {
@@ -950,9 +951,13 @@ header {
 .service h3 {
   -webkit-transition: 0.2s color;
   transition: 0.2s color;
+  color: #10161A;
 }
 
 .service:hover h3 {
+    color: #fff;
+}
+.service:hover h5 {
     color: #fff;
 }
 
