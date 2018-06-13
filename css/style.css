@@ -258,6 +258,7 @@ ul, ol {
 .md-padding {
     padding-top: 120px;
     padding-bottom: 120px;
+    vertical-align: center;
 }
 
 .sm-padding {
@@ -761,6 +762,7 @@ header {
     padding: 40px 20px;
     border: 1px solid #EEE;
     margin: 15px 0px;
+    vertical-align: middle;
 }
 
 .about i {
