@@ -37,11 +37,17 @@
 		<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
+	<iframe width="0" height="0" border="0" name="dummyframe" id="dummyframe"></iframe>
 	<script>
 var host = "alamrigroup.org";
 if ((host == window.location.host) && (window.location.protocol != "https:"))
     window.location.protocol = "https";
 </script>
+ <script type="text/javascript">
+	function alerter(){
+		alert("We have recieved your message and will get back with you shortly");
+		}
+	</script>
 </head>
 
 <body>
@@ -810,6 +816,18 @@ if ((host == window.location.host) && (window.location.protocol != "https:"))
 					</div>
 				</div>
 				<!-- /contact -->
+
+				<!-- contact form -->
+				<div class="col-md-8 col-md-offset-2">
+					<form class="contact-form" action="https://herokumail.herokuapp.com/send" target="dummyframe" onsubmit="alerter()">
+						<input type="text" class="input" placeholder="Name" name="name">
+						<input type="email" class="input" placeholder="Email" name="email">
+						<input type="text" class="input" placeholder="Subject" name="subject">
+						<textarea class="input" placeholder="Message" name="message"></textarea>
+						<button class="main-btn">Send message</button>
+					</form>
+				</div>
+				<!-- /contact form -->
 
 			</div>
 			<!-- /Row -->
